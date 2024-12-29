@@ -5,7 +5,7 @@ export const AboutContent: React.FC = () => {
   return (
     <Stack>
       <Text
-        fz={{ base: rem(32), md: rem(64) }}
+        fz={{ base: rem(48), md: rem(90) }}
         fw="bold"
         variant="gradient"
         gradient={{

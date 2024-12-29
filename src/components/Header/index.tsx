@@ -20,27 +20,27 @@ import { montserrat } from "@/theme/fonts";
 
 const links = [
   {
-    href: "#About",
+    href: "#about",
     title: "About",
   },
   {
-    href: "#Overview",
+    href: "#overview",
     title: "Overview",
   },
   {
-    href: "#Ecosystem",
+    href: "#ecosystem",
     title: "Ecosystem",
   },
   {
-    href: "#Vision",
+    href: "#vision",
     title: "Vision & Mission",
   },
   {
-    href: "#Roadmap",
+    href: "#roadmap",
     title: "Roadmap",
   },
   {
-    href: "#Tokenomics",
+    href: "#tokenomics",
     title: "Tokenomics",
   },
 ];
@@ -131,6 +131,7 @@ export const Header: React.FC = () => {
                     href="/pool"
                     size="lg"
                     className={classes.button}
+                    tt={"uppercase"}
                   >
                     Launch App
                   </Button>
@@ -179,6 +180,7 @@ export const Header: React.FC = () => {
                   className={classes.button}
                   variant="gradient"
                   gradient={{ from: "violet", to: "cyan", deg: 90 }}
+                  tt={"uppercase"}
                 >
                   Launch App
                 </Button>

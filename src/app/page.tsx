@@ -1,7 +1,11 @@
 import { About } from "@/components/About";
+import { Ecosystem } from "@/components/Ecosystem";
 import { Intro } from "@/components/Intro";
 import { MainLayout } from "@/components/Layouts/MainLayout";
 import { Overview } from "@/components/Overview";
+import { RoadMap } from "@/components/Roadmap";
+import { Tokenomics } from "@/components/Tokenomics";
+import { Vision } from "@/components/Vision";
 
 export default function Home() {
   return (
@@ -9,6 +13,10 @@ export default function Home() {
       <Intro />
       <About />
       <Overview />
+      <Vision />
+      <Ecosystem />
+      <Tokenomics />
+      <RoadMap />
     </MainLayout>
   );
 }
