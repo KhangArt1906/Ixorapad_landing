@@ -1,8 +1,9 @@
 "use client";
-import { AppShell, AppShellHeader } from "@mantine/core";
+import { AppShell, AppShellFooter, AppShellHeader } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import { PropsWithChildren } from "react";
 import { Header } from "../Header";
+import { Footer } from "../Footer";
 
 export const MainLayout: React.FC<PropsWithChildren> = ({ children }) => {
   const [opened] = useDisclosure();
@@ -24,6 +25,8 @@ export const MainLayout: React.FC<PropsWithChildren> = ({ children }) => {
       <AppShell.Main pos={"relative"} bg="#0f051d" px={0}>
         {children}
       </AppShell.Main>
+      {/* Footer */}
+      <Footer />
     </AppShell>
   );
 };
