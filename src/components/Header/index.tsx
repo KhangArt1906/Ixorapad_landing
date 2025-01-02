@@ -43,12 +43,28 @@ const links = [
     href: "#tokenomics",
     title: "Tokenomics",
   },
+  {
+    href: "/pool",
+    title: "Pool",
+  },
+  {
+    href: "/staking",
+    title: "Staking",
+  },
+  {
+    href: "/covernance",
+    title: "Covernance",
+  },
+  {
+    href: "#",
+    title: "Buy Ixora",
+  },
 ];
 
 export const Header: React.FC = () => {
   const pathName = usePathname();
   const [drawOpened, { toggle: toggleDrawer, close: closeDrawer }] =
-    useDisclosure();
+    useDisclosure(false);
 
   const ref = useClickOutside(closeDrawer);
 
@@ -119,7 +135,7 @@ export const Header: React.FC = () => {
                   </Button>
                 </Group>
               ) : (
-                <Group gap={10} visibleFrom="md">
+                <Group visibleFrom="md">
                   <Button
                     variant="gradient"
                     gradient={{
@@ -190,7 +206,9 @@ export const Header: React.FC = () => {
                   href="/"
                   variant="subtle"
                   rightSection={<IconArrowRight />}
-                ></Button>
+                >
+                  Whitepaper
+                </Button>
               </Group>
             </ScrollArea>
           </Drawer>
