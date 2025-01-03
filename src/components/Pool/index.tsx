@@ -5,7 +5,7 @@ import { Intro } from "./Intro";
 import { Stepper } from "./Stepper";
 import { IconArrowRight } from "@tabler/icons-react";
 import { poolData } from "./data";
-import { CartItems } from "./CardItem";
+import { CartItems } from "./CardItems";
 
 export const Pool: React.FC = () => {
   return (
@@ -41,11 +41,14 @@ export const Pool: React.FC = () => {
               <Button
                 rightSection={<IconArrowRight size={16} />}
                 size="xs"
-                c="white"
+                color="cyan"
+                variant="filled"
                 radius={"xl"}
-                bg="#15aabf"
                 fw={"bold"}
-                fz={16}
+                fz={{
+                  base: 14,
+                  md: 16,
+                }}
               >
                 View More
               </Button>
@@ -58,7 +61,7 @@ export const Pool: React.FC = () => {
             gap={40}
             mt={30}
           >
-            {poolData.map((item) => (
+            {poolData?.map((item) => (
               <CartItems
                 key={item.name}
                 cardName={item.name}

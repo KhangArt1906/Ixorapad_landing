@@ -1,5 +1,6 @@
 import { ActionIcon, Button, Flex, Text, Title } from "@mantine/core";
 import { IconBrandTelegram, IconBrandTwitter } from "@tabler/icons-react";
+import Link from "next/link";
 
 export const Intro: React.FC = () => {
   return (
@@ -43,21 +44,34 @@ export const Intro: React.FC = () => {
       </Button>
 
       <Flex gap={15} mt={20}>
-        <ActionIcon bg="#525c9e" aria-label="Settings">
+        <ActionIcon
+          component={Link}
+          variant="filled"
+          href="https://t.me/IxorapadAnn"
+          color="rgba(82, 92, 158, 1)"
+        >
           <IconBrandTelegram
             style={{ width: "70%", height: "70%" }}
             stroke={1.5}
           />
         </ActionIcon>
-
-        <ActionIcon bg="#525c9e" aria-label="Settings">
+        <ActionIcon
+          component={Link}
+          variant="filled"
+          href="https://t.me/IxorapadChat"
+          color="rgba(82, 92, 158, 1)"
+        >
           <IconBrandTelegram
             style={{ width: "70%", height: "70%" }}
             stroke={1.5}
           />
         </ActionIcon>
-
-        <ActionIcon bg="#525c9e" aria-label="Settings">
+        <ActionIcon
+          component={Link}
+          variant="filled"
+          href="https://x.com/Ixorapad"
+          color="rgba(82, 92, 158, 1)"
+        >
           <IconBrandTwitter
             style={{ width: "70%", height: "70%" }}
             stroke={1.5}

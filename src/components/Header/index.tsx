@@ -56,7 +56,7 @@ const links = [
     title: "Covernance",
   },
   {
-    href: "#",
+    href: "/ixora",
     title: "Buy Ixora",
   },
 ];
